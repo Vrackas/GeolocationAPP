@@ -27,16 +27,41 @@
          * Configuring state provider
          */
         $stateProvider
-            .state('login', {
-                url: '/login',
-                templateUrl: 'templates/login/login.html',
-                controller: 'Login',
+
+
+            .state('main', {
+                url: '/main',
+                abstract: true,
+                templateUrl: 'templates/main/main.html',
+                controller: 'Main',
                 controllerAs: 'vm'
-            });
+            })
 
-        $urlRouterProvider.otherwise('/login');
+            .state('main.login', {
+                url: '/login',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/login/login.html',
+                        controller: 'Login',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+
+            .state('main.register', {
+                url: '/register',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/register/register.html',
+                        controller: 'Register',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+        ;
+
+        $urlRouterProvider.otherwise('/main/login');
     }
-
 
 })();
 

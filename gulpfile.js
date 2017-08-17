@@ -4,7 +4,8 @@ var cleanCss = require('gulp-clean-css');
 var rename = require('gulp-rename');
 
 var paths = {
-  sass: ['./scss/**/*.scss']
+  sass: ['./scss/**/*.scss',
+      './www/templates/**/*.scss']
 };
 
 gulp.task('default', ['sass']);

@@ -9814,3 +9814,8 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+.loginBg {
+  background-image: url("../img/google-maps.jpg");
+  background-size: 120% 150%;
+  background-repeat: no-repeat; }
