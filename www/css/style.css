@@ -1,1 +1,6 @@
 /* Empty. Add your own CSS if you like */
+ion-view.loginPage,
+ion-view.registerPage {
+    background: #3e563e;
+}
+

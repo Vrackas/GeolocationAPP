@@ -28,39 +28,22 @@
          */
         $stateProvider
 
-
-            .state('main', {
-                url: '/main',
-                abstract: true,
-                templateUrl: 'templates/main/main.html',
-                controller: 'Main',
+            .state('login', {
+                url: '/login',
+                templateUrl: 'templates/login/login.html',
+                controller: 'Login',
                 controllerAs: 'vm'
             })
 
-            .state('main.login', {
-                url: '/login',
-                views: {
-                    'menuContent': {
-                        templateUrl: 'templates/login/login.html',
-                        controller: 'Login',
-                        controllerAs: 'vm'
-                    }
-                }
-            })
-
-            .state('main.register', {
+            .state('register', {
                 url: '/register',
-                views: {
-                    'menuContent': {
-                        templateUrl: 'templates/register/register.html',
-                        controller: 'Register',
-                        controllerAs: 'vm'
-                    }
-                }
+                templateUrl: 'templates/register/register.html',
+                controller: 'Register',
+                controllerAs: 'vm'
             })
         ;
 
-        $urlRouterProvider.otherwise('/main/login');
+        $urlRouterProvider.otherwise('/login');
     }
 
 })();

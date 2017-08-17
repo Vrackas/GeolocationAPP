@@ -9815,7 +9815,31 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-.loginBg {
-  background-image: url("../img/google-maps.jpg");
-  background-size: 120% 150%;
-  background-repeat: no-repeat; }
+ion-view.loginPage .app-logo {
+  text-align: center;
+  margin: 10% 0 20% 0; }
+
+ion-view.loginPage .app-logo img {
+  width: 40%; }
+
+ion-view.loginPage .responsive-sm {
+  margin: 0 0 10% 0; }
+
+ion-view.loginPage .login-form .item {
+  margin: 15px 0; }
+  ion-view.loginPage .login-form .item input {
+    margin-left: 10px; }
+
+ion-view.loginPage .navigate-button {
+  display: flex;
+  justify-content: space-between; }
+
+ion-view.registerPage .back-button {
+  color: #fff; }
+  ion-view.registerPage .back-button .ion-chevron-left {
+    margin: 0 10px 0 0; }
+
+ion-view.registerPage .register-form .item {
+  margin: 10% 0; }
+  ion-view.registerPage .register-form .item input {
+    margin-left: 10px; }
