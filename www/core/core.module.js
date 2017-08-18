@@ -8,11 +8,9 @@
             /*
              * Angular modules
              */
-            // 'ngStorage',
-            // 'ngMessages',
-            // 'ngMaterial',
-            // 'ngFileUpload',
-            // 'ngCordova',
+            'ngStorage',
+            'ngMaterial',
+            'ngCordova',
             /*
              * Our reusable cross app code modules
              */
