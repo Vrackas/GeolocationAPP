@@ -9843,14 +9843,3 @@ ion-view.registerPage .register-form .item {
   margin: 10% 0; }
   ion-view.registerPage .register-form .item input {
     margin-left: 10px; }
-
-ion-view.registerPage .register-form .gender {
-  display: flex;
-  justify-content: space-around; }
-  ion-view.registerPage .register-form .gender div {
-    width: 100px;
-    height: 100px;
-    padding: 20px 0 0 40px;
-    font-size: 60px;
-    background: #475754;
-    border-radius: 50%; }
